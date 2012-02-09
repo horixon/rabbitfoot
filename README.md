@@ -17,10 +17,10 @@ var rabbitFoot = require('rabbitFoot');
 
 2.Consumer
 ```
-var rabbitFoot = require('rabbitFoot');   
-rabbitFoot.createConnection({ url: 'amqp://localhost' })   
-	.onReadyCreateQueue('tweet', {type:'fanout'},'',{durable:false, exclusive:true}, function(exchange, queue){   			 
-		queue.subscribe(function (message, headers, deliveryInfo) {   
+var rabbitFoot = require('rabbitFoot');         s
+rabbitFoot.createConnection({ url: 'amqp://localhost' })          
+	.onReadyCreateQueue('tweet', {type:'fanout'},'',{durable:false, exclusive:true}, function(exchange, queue){        			 
+		queue.subscribe(function (message, headers, deliveryInfo) {     
 			//do something    
 		});   
 	});  
