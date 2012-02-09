@@ -7,6 +7,7 @@ convenience methods for [node-amqp](https://github.com/postwait/node-amqp)
 1.Publisher
 
 ```var rabbitFoot = require('rabbitFoot');       
+
 	var rabbitFoot = rabbitFoot.createConnection({ url: 'amqp://localhost' })       
 				.onReadyCreateQueue('tweet', {type:'fanout'},'',{durable:false, exclusive:true}, function(exchange, queue){      
 					//Ready to publish   
